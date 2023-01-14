@@ -1,0 +1,653 @@
+body {
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d8107c;
+  border-radius: 5px;
+}
+
+.text-orenge {
+  color: #eb7723;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-orenge {
+  background: #eb7723 !important;
+  color: #ffff !important;
+}
+
+.bg-white {
+  background: #ffffff !important;
+  color: #d8107c !important;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* ----------------Login Page------------------- */
+.login-page .login-content {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-page .login-content .logo-img img {
+  height: 100px;
+}
+
+.login-page .login-content .input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.login-page .login-content .input-div.one {
+  margin-top: 0;
+}
+
+.login-page .i {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page .i i {
+  transition: .3s;
+}
+
+.login-page .input-div>div {
+  position: relative;
+  height: 45px;
+}
+
+.login-page .input-div>div>h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.login-page .input-div:before,
+.login-page .input-div:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #d8107c;
+  transition: .4s;
+}
+
+.login-page .input-div:before {
+  right: 0%;
+}
+
+.login-page .login-page .input-div:after {
+  left: 0%;
+}
+
+.login-page .input-div.focus:before,
+.login-page .input-div.focus:after {
+  width: 80%;
+}
+
+.login-page .input-div.focus>div>h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.login-page .input-div.focus>.i>i {
+  color: #d8107c;
+}
+
+.login-page .input-div>div>input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: 'poppins', sans-serif;
+}
+
+.login-page .input-div.pass {
+  margin-bottom: 4px;
+}
+
+.login-page a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: .3s;
+}
+
+.login-page a:hover {
+  color: #d8107c;
+}
+
+.login-page .btn,
+.login-page .btn:hover {
+  display: block;
+  width: 100%;
+  border-radius: 25px;
+  background: #d8107c;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px 0;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.login-page .form-control:focus {
+  box-shadow: none;
+}
+
+.hero-img {
+  background-image: url('./assets/img/login-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ******************** */
+
+.Tabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff !important;
+  background: #f1a11b !important;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 30px;
+}
+
+
+/* .Tabs .tab-btn [type=button]:not(:disabled),
+.Tabs .tab-btn [type=reset]:not(:disabled),
+.Tabs .tab-btn [type=submit]:not(:disabled),
+.Tabs .tab-btn button:not(:disabled) {
+  cursor: pointer;
+  background: #fed5b9;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #eb7723;
+} */
+
+.Tabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+  cursor: pointer;
+  background: #fed5b9;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #eb7723;
+}
+
+.Tabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-disabled {
+  cursor: pointer;
+  background: #fed5b9;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #eb7723;
+  opacity: 0.3;
+}
+
+.Tabs .css-1aquho2-MuiTabs-indicator {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: transparent !important;
+}
+
+.dashboardmain {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+
+/* ----------------------------------------------- */
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainheader {
+  background-color: #dfdfdf;
+  padding: 5px 10px;
+  border: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.mainheader Button,
+.mainheader Button:hover {
+  margin: 0px;
+  text-align: end;
+  color: #d8107c;
+  background: white;
+  font-weight: 600;
+  text-transform: initial;
+  padding: 8px 15px;
+
+}
+
+#basic-menu .css-6hp17o-MuiList-root-MuiMenu-list {
+  margin: 0px;
+  text-align: end;
+  background: #d8107c;
+  color: white;
+
+}
+
+#basic-menu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  font-weight: 400;
+  padding: 8px !important;
+  font-size: 15px !important;
+  line-height: 23px !important;
+  letter-spacing: 0.5px;
+}
+
+.containerheader {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.containerFooter {
+  width: 100%;
+  /* height: 10%; */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.mainFooter {
+  background-color: #dfdfdf;
+  padding: 10px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarcontainer {
+  width: 100%;
+  height: 80%;
+
+}
+
+.main {
+  width: 100%;
+  height: 110%;
+  /* border: 1px solid black; */
+  /* background-color: rgb(252, 250, 247);   */
+  display: flex;
+}
+
+.menu {
+  width: 16%;
+  height: 100%;
+}
+
+.section {
+  width: 84%;
+  /* margin-top: 150px; */
+  padding: 0 30px;
+  overflow-y: auto;
+
+}
+
+.menu2 {
+  width: 3%;
+  height: 100%;
+}
+
+.section2 {
+  width: 98%;
+  /* margin-top: 150px; */
+  padding: 0 30px;
+  overflow-y: auto;
+
+}
+
+.menuIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 15px;
+}
+
+.sidenav .menuIcon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 15px;
+}
+
+.sidenav {
+  width: 15%;
+  height: 100%;
+  /* z-index: 1; */
+  /* overflow-x: hidden; */
+  transition: 0.5s;
+  background-color: #d8107c;
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.unset_sidenav {
+  width: 50px;
+  height: 100%;
+  /* z-index: 1; */
+  /* overflow-x: hidden; */
+  transition: 0.5s;
+  background-color: #d8107c;
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+hr {
+  margin: 0 !important;
+  font-weight: 100;
+}
+
+.unset_sidenav .holder {
+  display: flex;
+  justify-content: center;
+}
+
+.subMenu {
+  padding: 5px 20px;
+  background-color: #f1a11b;
+}
+
+.subMenu p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.holder {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 15px 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+/* .holder:hover {
+    color: #da610a;
+  } */
+
+.userprofile {
+  width: 100%;
+  height: 20%;
+  transition: 0.5s;
+  background-color: #da610a;
+}
+
+.userprofile2 {
+  width: 100%;
+  height: 0%;
+  transition: 0.5s;
+}
+
+.userprofile1 {
+  width: 100%;
+  height: 20%;
+  transition: 0.5s;
+  background-color: #da610a;
+}
+
+.userprofile3 {
+  width: 100%;
+  height: 0%;
+  transition: 0.5s;
+}
+
+.assigntaskmain {
+  width: 100%;
+}
+
+/* ---------------My Task------------------ */
+.MyTaskDetails .css-41abqd-MuiTableContainer-root {
+  width: 100%;
+  overflow-x: auto;
+  max-height: 60vh !important;
+}
+
+.MyTaskDetails .card-header {
+  background: #eb7723;
+  color: white;
+  padding: 13px;
+  font-size: 20px;
+}
+
+/* --------------------AssignTask------------------------- */
+
+
+
+/* .holder:hover {
+  color: #da610a;
+} */
+
+.userprofile {
+  width: 100%;
+  height: 20%;
+  transition: 0.5s;
+  background-color: #da610a;
+}
+
+.userprofile2 {
+  width: 100%;
+  height: 0%;
+  transition: 0.5s;
+}
+
+.userprofile1 {
+  width: 100%;
+  height: 20%;
+  transition: 0.5s;
+  background-color: #da610a;
+}
+
+.userprofile3 {
+  width: 100%;
+  height: 0%;
+  transition: 0.5s;
+}
+
+.assigntaskmain {
+  width: 100%;
+
+}
+
+.assigntaskSearchform {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 50px;
+  margin: 50px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1)
+}
+
+.AssigntaskSearchbtn {
+  width: 200px;
+  background-color: #da610a;
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px;
+  margin-left: 20px;
+}
+
+/* -------------------Meeting Master---------------------- */
+/* .AddMeetingMaster .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.AddMeetingMaster .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input,
+.assignTask .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.assignTask .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input,
+.migrate .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.migrate .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input,
+.CrecUpdate .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.CrecUpdate .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 11.4px 14px;
+} */
+ .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+ .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 11px 14px !important;
+}
+
+.AddMeetingMaster .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100%;
+}
+
+.AddMeetingMaster .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+.assignTask .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+.migrate .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+.CrecUpdate .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #d8107c;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  outline: #d8107c;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  color: #d8107c !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: #d8107c !important;
+}
+
+/* ------------------------Creck and migrate --------------------------------- */
+
+.migrate .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+.CrecUpdate .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+.AddMeetingMaster .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+.migrate .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 14px;
+}
+
+.css-1ygcj2i-MuiTableCell-root,
+.css-1ygcj2i-MuiTableCell-root:hover,
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root:hover,
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active {
+  color: #fff !important;
+}
+
+.css-15wwp11-MuiTableHead-root,
+.css-y8ay40-MuiTableCell-root,
+.css-dwuj3p-MuiTableCell-root {
+  background: #d8107c !important;
+  color: #ffffff !important;
+}
+
+
+/* input[aria-label="select all desserts"]  */
+
+/* .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{ 
+  color: #fff !important;
+} */
+
+.disableButton[disabled] {
+  background-color: #999;
+}
+
+.disableButton {
+  background-color: orange;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  text-transform: none !important;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
